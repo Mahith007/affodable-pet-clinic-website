@@ -346,7 +346,7 @@ export const emergencyInfo = {
 // -----------------------------------------------------------------------------
 // Top-level landing-page anchors stay directly in the header.
 export const navLinks = [
-  { label: "Home", href: "/#home" },
+  { label: "Home", href: "/" },
   { label: "About", href: "/#about" },
   { label: "Hours", href: "/#hours" },
   { label: "Emergency", href: "/#emergency" },

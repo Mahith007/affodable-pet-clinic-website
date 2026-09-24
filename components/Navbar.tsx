@@ -73,7 +73,7 @@ export function Navbar() {
       }`}
     >
       <Link
-        href="/#home"
+        href="/"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-white"
       >
         Skip to content
@@ -85,7 +85,7 @@ export function Navbar() {
       >
         {/* Brand */}
         <Link
-          href="/#home"
+          href="/"
           className="flex items-center gap-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
         >
           <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 text-white">

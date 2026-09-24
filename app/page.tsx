@@ -1,6 +1,5 @@
 import React from "react";
 import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { OpeningHours } from "@/components/OpeningHours";
 import { Emergency } from "@/components/Emergency";
@@ -12,7 +11,6 @@ export default function HomePage() {
     <>
       <Navbar />
       <main>
-        <Hero />
         <About />
         <OpeningHours />
         <Emergency />

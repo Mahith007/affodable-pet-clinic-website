@@ -84,7 +84,7 @@ export function Contact() {
                 ))}
               </ul>
               <a
-                href="#hours"
+                href="/#hours"
                 className="mt-2 inline-block text-sm font-semibold text-brand-700 hover:underline"
               >
                 See full hours

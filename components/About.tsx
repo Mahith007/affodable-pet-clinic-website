@@ -48,7 +48,7 @@ export function About() {
           </div>
 
           <div className="mt-8">
-            <a href="#contact" className="btn-primary w-full sm:w-auto">
+            <a href="/#contact" className="btn-primary w-full sm:w-auto">
               Contact the clinic
             </a>
           </div>

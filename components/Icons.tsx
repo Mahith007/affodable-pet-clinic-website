@@ -149,6 +149,23 @@ export function ArrowRightIcon({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
+export function ChevronDownIcon({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  );
+}
+
 export function MenuIcon({ className = "h-6 w-6" }: IconProps) {
   return (
     <svg

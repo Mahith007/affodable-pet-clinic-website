@@ -342,16 +342,47 @@ export const emergencyInfo = {
 };
 
 // -----------------------------------------------------------------------------
-// NAVIGATION LINKS (used by the navbar and footer)
+// NAVIGATION (used by the navbar and footer)
 // -----------------------------------------------------------------------------
+// Top-level landing-page anchors stay directly in the header.
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Our Team", href: "#team" },
-  { label: "Pet Care", href: "#pet-care" },
-  { label: "Pet Portal", href: "#pet-portal" },
-  { label: "Hours", href: "#hours" },
-  { label: "Emergency", href: "#emergency" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "About", href: "/#about" },
+  { label: "Hours", href: "/#hours" },
+  { label: "Emergency", href: "/#emergency" },
+  { label: "Contact", href: "/#contact" },
 ];
+
+export type NavDropdownItem = {
+  label: string;
+  href: string;
+  description: string;
+};
+
+// These pages live on their own routes and open from the "Menu" dropdown.
+// They are intentionally NOT rendered on the landing page.
+export const menuDropdownLinks: NavDropdownItem[] = [
+  {
+    label: "Services",
+    href: "/services",
+    description: "Wellness, diagnostics, dental & surgery",
+  },
+  {
+    label: "Meet Our Team",
+    href: "/team",
+    description: "Get to know our veterinarian",
+  },
+  {
+    label: "Pet Care Information",
+    href: "/pet-care",
+    description: "Everyday advice for happy, healthy pets",
+  },
+  {
+    label: "Access Pet Portal",
+    href: "/pet-portal",
+    description: "View records or update information",
+  },
+];
+
+// Every link for the footer (landing anchors + dropdown pages).
+export const footerLinks = [...navLinks, ...menuDropdownLinks];

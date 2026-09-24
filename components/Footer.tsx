@@ -1,5 +1,6 @@
 import React from "react";
-import { addressLines, clinic, navLinks, openingHours } from "@/data/clinic";
+import Link from "next/link";
+import { addressLines, clinic, footerLinks, openingHours } from "@/data/clinic";
 import { ClockIcon, MapPinIcon, PawIcon, PhoneIcon } from "./Icons";
 
 export function Footer() {
@@ -34,14 +35,14 @@ export function Footer() {
               Explore
             </h3>
             <ul className="mt-4 space-y-2.5">
-              {navLinks.map((link) => (
+              {footerLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm text-ink-300 transition-colors hover:text-white"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

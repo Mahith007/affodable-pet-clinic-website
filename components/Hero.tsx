@@ -49,7 +49,7 @@ export function Hero() {
               <PhoneIcon className="h-5 w-5" />
               Call Us: {clinic.phone}
             </a>
-            <a href="#services" className="btn-outline w-full sm:w-auto">
+            <a href="/services" className="btn-outline w-full sm:w-auto">
               View Our Services
               <ArrowRightIcon className="h-4 w-4" />
             </a>
@@ -119,7 +119,7 @@ export function Hero() {
               </div>
             </dl>
 
-            <a href="#contact" className="btn-accent mt-8 w-full">
+            <a href="/#contact" className="btn-accent mt-8 w-full">
               Get Directions & Contact Info
               <ArrowRightIcon className="h-4 w-4" />
             </a>

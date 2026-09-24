@@ -344,10 +344,14 @@ export const emergencyInfo = {
 // -----------------------------------------------------------------------------
 // NAVIGATION (used by the navbar and footer)
 // -----------------------------------------------------------------------------
-// Top-level landing-page anchors stay directly in the header.
+// Top-level navigation — every page shows directly, no dropdown.
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/#about" },
+  { label: "Services", href: "/services" },
+  { label: "Meet Our Team", href: "/team" },
+  { label: "Pet Care Information", href: "/pet-care" },
+  { label: "Access Pet Portal", href: "/pet-portal" },
   { label: "Hours", href: "/#hours" },
   { label: "Emergency", href: "/#emergency" },
   { label: "Contact", href: "/#contact" },
@@ -359,8 +363,7 @@ export type NavDropdownItem = {
   description: string;
 };
 
-// These pages live on their own routes and open from the "Menu" dropdown.
-// They are intentionally NOT rendered on the landing page.
+// Kept for backwards compatibility (no longer used by the navbar).
 export const menuDropdownLinks: NavDropdownItem[] = [
   {
     label: "Services",
@@ -384,5 +387,5 @@ export const menuDropdownLinks: NavDropdownItem[] = [
   },
 ];
 
-// Every link for the footer (landing anchors + dropdown pages).
-export const footerLinks = [...navLinks, ...menuDropdownLinks];
+// Every link for the footer (same flat list as the header).
+export const footerLinks = [...navLinks];
